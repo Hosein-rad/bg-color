@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COLOR FLIPPER</title>
+        <style>
+            body{
+                background-color: darkgoldenrod;
+            }
+            button{
+                width: 100px;
+                height: 50px;
+                border-radius: 10px;
+                margin: 5px;
+            }
+            #red{
+                background-color: red;
+                font-size: large;
+            }
+            #green{ 
+                background-color: green;
+            }
+            #blue{  
+                background-color: blue;
+            }
+            #random{    
+                background: linear-gradient(45deg, red, green, blue);
+            }
+        </style>
+
+    </head>
+    <body>
+        <h2>Click on the buttons to change the Background Color</h2>
+        <div id="container">
+            <button id="red" onclick="changeColor('red')">Red</button>
+            <button id="green" onclick="changeColor('green')">Green</button>
+            <button id="blue" onclick="changeColor('blue')">Blue</button>
+            <button id="random" onclick="changeRandomColor()">Random!<br> (not lgbt)</button>
+        </div>
+
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
